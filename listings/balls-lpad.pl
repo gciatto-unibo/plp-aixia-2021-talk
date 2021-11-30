@@ -1,0 +1,1 @@
+0.6::red_ball; 0.3::green_ball.
