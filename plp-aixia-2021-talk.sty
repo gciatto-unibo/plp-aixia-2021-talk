@@ -1,0 +1,69 @@
+% !TeX root = plp-aixia-2021-talk.sty
+
+% Macros
+\usepackage[T1]{fontenc}
+\usepackage{wasysym}
+\usepackage[yyyymmdd]{datetime}
+\usepackage{listings}
+
+\renewcommand{\dateseparator}{}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+        T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\newcommand{\version}{1}
+
+\newcommand{\module}[1]{\texttt{:#1}}
+\newcommand{\email}[1]{\href{mailto:#1}{\texttt{#1}}}
+
+\lstset{
+	showstringspaces=false,
+	basicstyle=\ttfamily,
+	commentstyle={\color{olive}},
+	ndkeywordstyle={\color{blue}},
+	stringstyle={\color{magenta}},
+	emphstyle={\itshape},
+	keywordstyle={\color{blue}},
+	breaklines=true,
+	numbers=left,
+	numberstyle=\tiny\color{gray},
+	numbersep=10pt,
+	tabsize=2,
+	extendedchars=true,
+	frame=trBL,
+	frameround=fttt,
+    escapeinside={\%*}{*)},
+}
+
+\newcommand{\twopkt}{\textsc{2P-Kt}}
+\newcommand{\problog}{ProbLog}
+\newcommand{\cplint}{\texttt{cplint}}
+
+\newcommand{\pl}[1]{\texttt{#1}}
+\newcommand{\kt}[1]{\texttt{#1}}
+\newcommand{\encode}[1]{$[\![$#1$]\!]$}
+
+\newcommand{\unibo}{\textsc{Alma Mater Studiorum}---Università di Bologna}
+\newcommand{\almaai}{Alma AI -- Alma Mater Research Institute for Human-Centered Artificial Intelligence}
+\newcommand{\disi}{Dipartimento di Informatica -- Scienza e Ingegneria}
+
+\lstdefinelanguage{Kotlin}{
+    comment=[l]{//},
+    emph={delegate, filter, filterIsInstance, flatMap, toSet, firstOrNull, forEach, lazy, map, mapNotNull, println, return@, sequence, yield},
+    keywords={operator, infix, init, abstract, actual, as, as?, break, by, class, companion, continue, data, do, dynamic, else, enum, expect, false, final, for, fun, get, if, import, in, interface, internal, is, null, object, override, package, private, public, return, set, super, suspend, this, throw, true, try, typealias, val, var, vararg, when, where, while, it},
+    morecomment=[s]{/*}{*/},
+    morestring=[b]",
+    morestring=[s]{"""*}{*"""},
+    ndkeywords={@Deprecated, @JvmField, @JvmName, @JvmOverloads, @JvmStatic, @JvmSynthetic, Array, Byte, Double, Float, Int, Iterable, Long, Runnable, Short, String},
+    sensitive=true,
+}
+
+\lstdefinelanguage{JavaScript}{
+    keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break, let, const},
+    ndkeywords={class, export, boolean, throw, implements, import, this},
+    sensitive=false,
+    comment=[l]{//},
+    morecomment=[s]{/*}{*/},
+    morestring=[b]',
+    morestring=[b]",
+    emph={Companion},
+}

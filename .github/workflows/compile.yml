@@ -5,7 +5,7 @@ on:
       - main
       - master
 env:
-  LATEX_ROOT: AMSBolognaFC-template
+  LATEX_ROOT: plp-aixia-2021-talk
 jobs:
   compile:
     runs-on: ubuntu-latest

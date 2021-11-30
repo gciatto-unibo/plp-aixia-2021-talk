@@ -1,0 +1,176 @@
+%\documentclass[handout]{beamer}\mode<handout>{\usetheme{default}}
+%
+\documentclass[presentation]{beamer}\mode<presentation>{\usetheme{AMSBolognaFC}}
+%\documentclass[handout]{beamer}\mode<handout>{\usetheme{AMSBolognaFC}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setbeamertemplate{bibliography item}{\insertbiblabel}
+\usepackage{plp-aixia-2021-talk}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title[PLP in \twopkt{}]{Probabilistic Logic Programming in \twopkt{}}
+%
+\author[Dellaluce \and Calegari \and \sspeaker{Ciatto}]{
+    Jason Dellaluce$^*$ \and Roberta Calegari$^\dagger$ \and \speaker{Giovanni Ciatto}$^*$
+    \\\smallskip\small
+    \email{jason.dellaluce@studio.unibo.it} \and \email{roberta.calegari@unibo.it} \and \speaker{\email{giovanni.ciatto@unibo.it}}
+}
+%
+\institute[UniBO]{
+    $^*$ \disi
+    \\
+    $^\dagger$ \almaai
+    \\
+    $^{*\dagger}$ \unibo
+}
+%
+\date[AIxIA, Dec. 1, 2021]{
+    $20^{th}$ International Conference of the
+    \\
+    Italian Association for Artificial Intelligence (AIxIA)
+    \\\medskip
+    Milan, 2021-12-01 (Virtual Conference)
+}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%/////////
+\frame{\titlepage}
+%/////////
+
+%===============================================================================
+\section*{Outline}
+%===============================================================================
+
+%/////////
+\frame[c]{\tableofcontents[hideallsubsections]}
+%/////////
+
+%===============================================================================
+\section{Motivation and Context}
+%===============================================================================
+
+%/////////
+\begin{frame}[c]{Context}
+    \begin{block}{\textbf{Probabilistic logic programming} (PLP)\ccite{riguzzi2018}}
+        \begin{itemize}
+            \item programming paradigm rooted in computational logic
+            \item \alert{probabilistic} theories as programs
+            \item logic \alert{inference} used to
+            %
+            \begin{enumerate}
+                \item compute \alert{probabilities} for logic queries
+                \item induce probabilities from data
+            \end{enumerate}
+        \end{itemize}
+    \end{block}
+    %
+    \begin{block}{In this paper}
+        \begin{itemize}
+            \item we focus on the \alert{resolution} of probabilistic queries
+            \item from a \alert{technological} perspective
+        \end{itemize}
+    \end{block}
+\end{frame}
+%/////////
+
+%/////////
+\begin{frame}[c]{Motivations}
+
+    \begin{enumerate}
+        \item Current technologies for (P)LP are \alert{technological \emph{silos}}
+        %
+        \begin{itemize}
+            \item poor \alert{inter-platform} interoperability
+            \item (P)LP facilities cannot simply be exploited \alert{``as a library''}
+        \end{itemize}
+
+        \bigskip
+
+        \item Hard to exploit (P)LP in mainstream programming
+
+        \bigskip
+
+        \item Willing to extend the \twopkt{} ecosystem\ccite{2pkt-swx16} towards PLP
+        %
+        \begin{itemize}
+            \item our inherently multi-platform LP ecosystem
+        \end{itemize}
+
+        \bigskip
+
+        \item Call to arms for anyone interested
+
+    \end{enumerate}
+
+\end{frame}
+%/////////
+
+%/////////
+\begin{frame}[c]{Background -- PLP}
+
+    \begin{itemize}
+        \item Two major technologies for PLP: $\begin{cases}
+            \text{\problog\ccite{de-raedt-2007}}
+            \\
+            \text{\cplint\ccite{riguzzi-2007}}
+        \end{cases}$
+
+        \bigskip
+
+        \item Both based on
+        %
+        \begin{itemize}
+            \item logic programs with annotated disjunctions\ccite{de-raedt-2007} (\alert{LPAD})
+
+            \item Sato's \alert{distribution semantics}\ccite{sato1995}
+        \end{itemize}
+
+        \bigskip
+
+        \item Both relying on \alert{knowledge compilation}\ccite{darwiche2002knowledge} to reach efficiency
+
+        \bigskip
+
+        \item Both exploiting some \alert{Prolog technology} behind the scenes
+        %
+        \begin{itemize}
+            \item \problog{} $\longrightarrow$ YAP Prolog\ccite{CostaRD12}
+            \item \cplint{} $\longrightarrow$ SWI-Prolog\ccite{WielemakerSTL12}
+        \end{itemize}
+
+    \end{itemize}
+
+\end{frame}
+%/////////
+
+
+%===============================================================================
+\section*{}
+%===============================================================================
+
+%/////////
+\frame{\titlepage}
+%/////////
+
+%===============================================================================
+\section*{\refname}
+%===============================================================================
+
+%%%%
+\setbeamertemplate{page number in head/foot}{}
+%/////////
+\begin{frame}[c,noframenumbering]{\refname}
+%\begin{frame}[t,allowframebreaks,noframenumbering]{\refname}
+%	\tiny
+	\scriptsize
+%	\footnotesize
+	\bibliographystyle{plain}
+%	\bibliographystyle{alpha}
+	\bibliography{plp-aixia-2021-talk}
+\end{frame}
+%/////////
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
