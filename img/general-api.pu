@@ -10,9 +10,9 @@ activate User
 User -> Solver: solve(Goal)
 activate Solver
 
-Solver -> Prolog: prob_solve(Goal, P)
+Solver -> Prolog: prob_query(P, Goal)
 activate Prolog
-Prolog --> Solver: //list of solutions//
+Prolog --> Solver: //all solutions//
 deactivate Prolog
 
 
