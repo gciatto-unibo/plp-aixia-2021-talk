@@ -1,5 +1,9 @@
-# beamer-AMSBolognaFC
-> A simple Beamer-LaTeX style for presentations by Alma Mater Studiorum (Cesena Campus)
-> with Bologna FC standard colours
-## author
-* Andrea Omicini
+# Probabilistic Logic Programming in 2P-Kt
+
+Discussion paper presented at AIxIA 2021
+
+## Authors 
+
+- Jason Dellaluce
+- Giovanni Ciatto
+- Roberta Calegari
