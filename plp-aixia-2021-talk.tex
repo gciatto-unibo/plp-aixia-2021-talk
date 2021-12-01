@@ -3,7 +3,7 @@
 \documentclass[presentation]{beamer}\mode<presentation>{\usetheme{AMSBolognaFC}}
 %\documentclass[handout]{beamer}\mode<handout>{\usetheme{AMSBolognaFC}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\setbeamertemplate{bibliography item}{\insertbiblabel}
+%\setbeamertemplate{bibliography item}{\insertbiblabel}
 \usepackage{plp-aixia-2021-talk}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title[PLP in \twopkt{}]{Probabilistic Logic Programming in \twopkt{}}
@@ -56,13 +56,13 @@
 \begin{frame}[c]{Context}
     \begin{block}{\textbf{Probabilistic logic programming} (PLP)\ccite{riguzzi2018}}
         \begin{itemize}
-            \item programming paradigm rooted in computational logic
+            \item programming \alert{paradigm} rooted in computational logic
             \item \alert{probabilistic} theories as programs
             \item logic \alert{inference} used to
             %
             \begin{enumerate}
-                \item compute \alert{probabilities} for logic queries
-                \item induce probabilities from data
+                \item \alert{compute probabilities} for logic \alert{queries}
+                \item \alert{tune} probabilistic models from \alert{data}
             \end{enumerate}
         \end{itemize}
     \end{block}
@@ -91,19 +91,19 @@
 
         \bigskip
 
-        \item Hard to exploit (P)LP in mainstream programming
+        \item Hard to exploit (P)LP in \alert{mainstream} programming
 
         \bigskip
 
-        \item Willing to extend the \twopkt{} ecosystem\ccite{2pkt-swx16} towards PLP
+        \item Willing to extend the \alert{\twopkt{}} ecosystem\ccite{2pkt-swx16} towards PLP
         %
         \begin{itemize}
-            \item our inherently multi-platform LP ecosystem
+            \item our \alert{inherently multi-platform} LP ecosystem
         \end{itemize}
 
         \bigskip
 
-        \item Call to arms for anyone interested
+        \item \alert{Call to arms} for anyone interested in joining our efforts
 
     \end{enumerate}
 
@@ -137,7 +137,7 @@
         \item Both relying on \alert{knowledge compilation}\ccite{darwiche2002knowledge} to reach efficiency
         %
         \begin{itemize}
-            \item in particular, onto (some variant of) binary decision diagrams\ccite{akers1978binary} (BDD)
+            \item namely, onto (some variant of) binary decision diagrams\ccite{akers1978binary} (\alert{BDD})
         \end{itemize}
 
         \bigskip
@@ -395,16 +395,16 @@
 
     \begin{block}{Summing up, in this paper we}
         \begin{itemize}
-            \item design and implemented a \problog{} module for \twopkt{}
-            \item bringing PLP as a library to many platforms/languages
+            \item design and implemented a \alert{\problog{} module} for \twopkt{}
+            \item bringing \alert{PLP as a library} to \alert{many platforms}/languages
         \end{itemize}
     \end{block}
 
     \begin{exampleblock}{In the future we plan to}
         \begin{itemize}
-            \item gain efficiency by removing the knowledge re-compilation step
-            \item support approximate resolution
-            \item explore the exploitation of MDD instead of BDD
+            \item gain efficiency by removing the \alert{knowledge re-compilation} step
+            \item support \alert{approximate} resolution
+            \item explore the exploitation of \alert{MDD} instead of BDD
         \end{itemize}
     \end{exampleblock}
 
@@ -432,8 +432,8 @@
 %	\tiny
 	\scriptsize
 %	\footnotesize
-	\bibliographystyle{plain}
-%	\bibliographystyle{alpha}
+%	\bibliographystyle{plain}
+	\bibliographystyle{alpha}
 	\bibliography{plp-aixia-2021-talk}
 \end{frame}
 %/////////
